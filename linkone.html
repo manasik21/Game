@@ -9,6 +9,11 @@ main{
   
 body {font-family: Arial, Helvetica, sans-serif;}
 {box-sizing: border-box;}
+  
+/* select form*/
+  select:invalid { color: gray; }
+  select {
+    color:#fe9900;}
 
 /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
@@ -163,7 +168,7 @@ function closeForm() {
 <main>
 
 <!-- ********************  Age 6 + ******************** -->
- <button class="open-button" onclick="openForm()">Open Form</button>
+ <button class="open-button" onclick="openForm()">Feedback Form</button>
 
 
 
@@ -207,12 +212,13 @@ function closeForm() {
   
      Full name <input type = "text" placeholder="Enter your name" name="name" required> 
      <br>
-     <label for="age">Choose an age group:</label>
+     <label for="age">Choose an age group:</label><br>
 
-<select name="age" id="age" required placeholder="Enter the age group you wish to vote for">
-  <option value="68">6-8</option>
-  <option value="911">9-11</option>
-  <option value="1214">12-14</option>
+<select name="age" id="age" required>
+  <option value="" disabled selected>Select the age group you wish to vote for</option>                                                                                         
+  <option value="0">6-8</option>
+  <option value="1">9-11</option>
+  <option value="2">12-14</option>
  
 </select><br>
     Choose your favorite game from the selected age group <input type = "text"> 
