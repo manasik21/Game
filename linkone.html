@@ -204,12 +204,12 @@ function closeForm() {
   </div>
   </div>
      <div class="form-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
+  <form action="/action_page.php" class="form-container" name="feedbackform" method="post" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScRVcSD_p-1YhjyqYMU6s_OAaDQh6N3Zl47Du70M2FL5QhfEg/formResponse">
     <h1>Vote for your favorite game</h1>
- Full name <input type = "text" placeholder="Enter your name" name="name" required> 
+ Full name <input type = "text" placeholder="Enter your name" name="entry.1773823521" id="name" required> 
      <br>
 <label for="age">Choose an age group:</label><br>
-<select name="age" id="age" required name="name">
+<select name="age" id="age" required name="entry.523364671">
   <option value="" disabled selected>Select the age group you wish to vote for</option>                                                                                         
   <option value="0">6-8</option>
   <option value="1">9-11</option>
@@ -219,7 +219,7 @@ function closeForm() {
                    <br>
     Choose your favorite game from the selected age group
                    <br>
-                   <input type = "text" name="name"> 
+                   <input type = "text" name="entry.512573646"> 
                                                                               
     <button type="submit" class="btn">Login</button>
     <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
